@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  background: #d9d9d9;
+}
+
+.search {
+  margin: 25px;
+  display: flex;
+}
+
+.search > input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #c4c7ce;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.search > button {
+  width: 90px;
+  height: 55px;
+  color: #fff;
+  background: #15549e;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.main {
+  width: 100%;
+  max-width: 340px;
+  flex-direction: row;
+  justify-items: center;
+  margin: 50px auto;
+  display: flex;
+}
+
+.main > ul {
+  flex-flow: wrap;
+  justify-content: start;
+  margin-right: -20px;
+  display: flex;
+}
+
+.site {
+  margin-right: 20px;
+}
+
+.site, .addButton {
+  width: 160px;
+  background: #fff;
+  border-radius: 5px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+
+.site > .delete {
+  color: #000;
+  visibility: hidden;
+  justify-content: center;
+  font-size: 26px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.site:hover .delete {
+  visibility: visible;
+}
+
+.site > .site_logo {
+  width: 64px;
+  height: 64px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 64px;
+  display: flex;
+}
+
+.site > .site_link {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.addButton > .icon {
+  width: 64px;
+  height: 64px;
+  margin-top: 20px;
+  font-size: 64px;
+}
+
+.addButton > .icon > svg {
+  margin-top: 20px;
+}
+
+.addButton > p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+@media (min-width: 460px) {
+  .search {
+    width: 400px;
+    margin: 25px auto;
+  }
+
+  .main {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: 700px) {
+  .main {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 880px) {
+  .main {
+    max-width: 880px;
+  }
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
