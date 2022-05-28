@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* style */
+
+body {
+    background: #d9d9d9;
+}
+
+/* 搜索模块 */
+.search {
+    margin: 25px;
+    display: flex;
+}
+
+.search>input {
+    height: 55px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #c4c7ce;
+    outline: none;
+}
+
+.search>button {
+    width: 90px;
+    height: 55px;
+    border-radius: 5px;
+    background: #15549e;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+/* 主体部 */
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-items: center;
+    max-width: 340px;
+    margin: 50px auto;
+}
+
+.main>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-right: -20px;
+}
+
+.site {
+    margin-right: 20px;
+}
+
+.site,
+.addButton {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 160px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.site>.delete {
+    font-size: 26px;
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.site>.site_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.site>.site_link {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.addButton>.icon {
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+    font-size: 64px;
+
+}
+
+.addButton>.icon>svg {
+    margin-top: 20px;
+}
+
+.addButton>p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* PC端 */
+@media (min-width: 460px) {
+    .search {
+        width: 400px;
+        margin: 25px auto;
+    }
+
+    .main {
+        max-width: 460px;
+    }
+}
+
+@media (min-width: 700px) {
+    .main {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 880px) {
+    .main {
+        max-width: 880px;
+    }
+}
